@@ -1,1 +1,2 @@
-$("<%= @id_name %>").html("<%= escape_javascript(render('book_comments/comment', book: @book)) %>");
+$("#comment_box").html("<%= escape_javascript(render('book_comments/comment', book: @book)) %>");
+$("textarea").val("");
